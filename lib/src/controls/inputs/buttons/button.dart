@@ -39,7 +39,8 @@ class Button extends BaseButton {
         if (states.isPressing) return 0.0;
         return 0.3;
       }),
-      shadowColor: ButtonState.all(theme.shadowColor),
+      shadowColor: ButtonState.all(const Color.fromRGBO(255, 255, 255, 0.04)),
+      //shadowColor: ButtonState.all(theme.shadowColor),
       padding: ButtonState.all(const EdgeInsets.only(
         left: 11.0,
         top: 5.0,

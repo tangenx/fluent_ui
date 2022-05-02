@@ -248,16 +248,20 @@ class ButtonThemeData with Diagnosticable {
       } else if (states.isHovering) {
         color = const Color(0xFFF6F6F6);
       } else {
-        color = Colors.white;
+        color = const Color(0xFFF9F9F9);
+        //color = Colors.white;
       }
       return color;
     } else {
       if (states.isPressing) {
-        color = const Color(0xFF272727);
+        color = const Color.fromRGBO(255, 255, 255, 0.0837);
+        //color = const Color(0xFF272727);
       } else if (states.isHovering) {
-        color = const Color(0xFF323232);
+        color = const Color.fromRGBO(255, 255, 255, 0.0837);
+        //color = const Color(0xFF323232);
       } else {
-        color = const Color(0xFF2b2b2b);
+        color = const Color.fromRGBO(255, 255, 255, 0.0605);
+        //color = const Color(0xFF2b2b2b);
       }
       return color;
     }

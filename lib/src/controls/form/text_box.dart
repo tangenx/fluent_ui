@@ -1066,11 +1066,14 @@ class _TextBoxState extends State<TextBox>
       if (!enabled) {
         return const Color.fromRGBO(255, 255, 255, 0.04);
       } else if (states.isPressing || states.isFocused) {
-        return const Color(0xFF1f1f1f);
+        return const Color.fromRGBO(30, 30, 30, 0.7);
+        //return const Color(0xFF1f1f1f);
       } else if (states.isHovering) {
-        return const Color(0xFF323232);
+        return const Color.fromRGBO(255, 255, 255, 0.1);
+        //return const Color(0xFF323232);
       } else {
-        return const Color(0xFF2d2d2d);
+        return const Color.fromRGBO(255, 255, 255, 0.0605);
+        //return const Color(0xFF2d2d2d);
       }
     } else {
       if (!enabled) {
