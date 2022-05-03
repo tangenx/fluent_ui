@@ -61,12 +61,13 @@ class Button extends BaseButton {
       }),
       foregroundColor: ButtonState.resolveWith((states) {
         if (states.isDisabled) return theme.disabledColor;
-        return ButtonThemeData.buttonColor(theme.brightness, states).basedOnLuminance().toAccentColor()[
-            states.isPressing
-                ? theme.brightness.isLight
-                    ? 'lighter'
-                    : 'dark'
-                : 'normal'];
+        return theme.brightness.isLight ? Colors.black : Colors.white;
+        // return ButtonThemeData.buttonColor(theme.brightness, states).basedOnLuminance().toAccentColor()[
+        //     states.isPressing
+        //         ? theme.brightness.isLight
+        //             ? 'lighter'
+        //             : 'dark'
+        //         : 'normal'];
       }),
     );
   }
